@@ -3,4 +3,4 @@ A multiplayer, web-based, robot combat game for the web based loosely on things 
 
 # VERSION HISTORY
 ## 1.0.0
-Just getting started...
+Just getting s
