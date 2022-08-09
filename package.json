@@ -2,8 +2,11 @@
   "name": "robot-survivors",
   "version": "1.0.0",
   "description": "A web-based robot combat game",
-  "main": "index.js",
+  "main": "main.js",
+  "type": "module",
   "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
