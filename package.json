@@ -4,11 +4,14 @@
   "description": "A web-based robot combat game",
   "main": "main.js",
   "type": "module",
+  "ts-standard": {
+    "project": "tsconfig.json"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node ./dist/main.js",
-    "test": "jest",
-    "lint": "eslint . --ext .ts"
+    "test": "npx jest",
+    "lint": "npx ts-standard"
   },
   "repository": {
     "type": "git",
@@ -19,17 +22,13 @@
   "bugs": {
     "url": "https://github.com/kreebog/robot-survivors/issues"
   },
+  "jestSonar": {
+    "reportPath": "./coverage"
+  },
   "homepage": "https://github.com/kreebog/robot-survivors#readme",
   "devDependencies": {
     "@types/jest": "^28.1.6",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.21.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.4",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.1",
-    "jest": "^28.1.3"
+    "ts-jest": "^28.0.7",
+    "ts-standard": "^11.0.0"
   }
 }
